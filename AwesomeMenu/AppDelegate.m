@@ -17,12 +17,25 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor whiteColor];
+    //-----------------------------------------------------------------------------------------
+    //解决该问题的代码
+    NSArray *windows = [[UIApplication sharedApplication] windows];
+    for(UIWindow *window in windows) {
+        if(window.rootViewController == nil){
+            UIViewController *vc = [[UIViewController alloc]initWithNibName:nil bundle:nil];
+            window.rootViewController = vc;
+        }
+    }
+    //解决该问题的代码 https://www.jianshu.com/p/ff82d632824a
+    //----------------------------------------------------------------------------------------
+
     
     UIImage *storyMenuItemImage = [UIImage imageNamed:@"bg-menuitem.png"];
     UIImage *storyMenuItemImagePressed = [UIImage imageNamed:@"bg-menuitem-highlighted.png"];
     
     UIImage *starImage = [UIImage imageNamed:@"icon-star.png"];
     
+    /*
     // Default Menu
  
     AwesomeMenuItem *starMenuItem1 = [[AwesomeMenuItem alloc] initWithImage:storyMenuItemImage
@@ -71,10 +84,10 @@
     
     AwesomeMenu *menu = [[AwesomeMenu alloc] initWithFrame:self.window.bounds startItem:startItem menuItems:menuItems];
     menu.delegate = self;
-    
-    
+
 
     /* Path-like customization
+     */
 
      AwesomeMenuItem *starMenuItem1 = [[AwesomeMenuItem alloc] initWithImage:storyMenuItemImage
                                                            highlightedImage:storyMenuItemImagePressed
@@ -114,9 +127,9 @@
     menu.animationDuration = 0.3f;
     menu.startPoint = CGPointMake(50.0, 410.0);
      
-     */
+     
     
-    [self.window addSubview:menu];
+    [self.window.rootViewController.view addSubview:menu];
     [self.window makeKeyAndVisible];
     return YES;
 }
