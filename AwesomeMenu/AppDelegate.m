@@ -29,7 +29,7 @@
     //解决该问题的代码 https://www.jianshu.com/p/ff82d632824a
     //----------------------------------------------------------------------------------------
 
-    [[AwesomeMenuManager shareInstance] install];
+    [[AwesomeMenuManager shareInstance] installWithStartingPosition:CGPointMake(100, 400)];
     UIImage *storyMenuItemImage = [UIImage imageNamed:@"AwesomeMenu.bundle/bg-menuitem.png"];
     UIImage *storyMenuItemImagePressed = [UIImage imageNamed:@"AwesomeMenu.bundle/bg-menuitem-highlighted.png"];
     

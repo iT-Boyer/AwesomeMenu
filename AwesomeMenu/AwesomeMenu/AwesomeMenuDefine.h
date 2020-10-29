@@ -35,7 +35,7 @@
 #define AwesomeMenuScreenHeight [UIScreen mainScreen].bounds.size.height
 
 //AwesomeMenu默认位置
-#define AwesomeMenuStartingPosition            CGPointMake(50, AwesomeMenuScreenHeight/3.0)
+#define AwesomeMenuStartingPosition            CGPointMake(0, AwesomeMenuScreenHeight/3.0)
 
 //AwesomeMenu全屏默认位置
 #define AwesomeMenuFullScreenStartingPosition  CGPointZero

@@ -40,6 +40,7 @@
    
 //   self = [super initWithFrame:CGRectMake(x, y, _kEntryViewSize, _kEntryViewSize)];
    self = [super initWithFrame:[UIScreen mainScreen].bounds];
+   self.menu.startPoint = CGPointMake(x, y);
    if (self) {
        #if defined(__IPHONE_13_0) && (__IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_13_0)
            if (@available(iOS 13.0, *)) {
@@ -239,7 +240,6 @@
         _menu.endRadius = 100.0f;
         _menu.nearRadius = 90.0f;
         _menu.animationDuration = 0.3f;
-        _menu.startPoint = self.startingPosition;
     }
     return _menu;
 }
