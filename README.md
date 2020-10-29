@@ -6,6 +6,42 @@ AwesomeMenu is a menu with the same look as the story menu of [Path](https://pat
 
 ---
 
+## 使用
+扩展
+参照[哆啦A梦](https://gitee.com/yixiangboy/DoraemonKit.git)，扩展了全局浮动框，支持移动。
+
+### 安装
+2.0.0及之前旧版本spec存在问题，修复之后，仅支持私库安装
+```ruby
+pod 'AwesomeMenu', :git => "https://github.com/levey/AwesomeMenu.git", :tag => '3.1.0'
+```
+### 调用
+
+```objc
+#import <AwesomeMenu/AwesomeMenuManager.h>
+//实现代理
+@interface AppDelegate : UIResponder <UIApplicationDelegate,AwesomeMenuDelegate>
+
+//安装
+[[AwesomeMenuManager shareInstance] installWithStartingPosition:CGPointMake(0,300) delegate:self];
+
+
+//实现代理
+- (void)awesomeMenu:(AwesomeMenu *)menu didSelectIndex:(NSInteger)idx
+{
+    NSLog(@"Select the index : %d",idx);
+}
+- (void)awesomeMenuDidFinishAnimationClose:(AwesomeMenu *)menu {
+    NSLog(@"Menu was closed!");
+}
+- (void)awesomeMenuDidFinishAnimationOpen:(AwesomeMenu *)menu {
+    NSLog(@"Menu is open!");
+}
+```
+
+=========
+
+
 **How To**:
 
 

@@ -34,6 +34,7 @@
 		F9AF161D254A86E1006DD54D /* AwesomeMenuManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F9AF161C254A86E1006DD54D /* AwesomeMenuManager.m */; };
 		F9AF1622254A8C5B006DD54D /* UIImage+AwesomeMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = F9AF1620254A8C5B006DD54D /* UIImage+AwesomeMenu.m */; };
 		F9AF1626254A8F58006DD54D /* AwesomeMenu.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F9AF1625254A8F58006DD54D /* AwesomeMenu.bundle */; };
+		F9AF16AD254AD066006DD54D /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = F9AF16AC254AD066006DD54D /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -80,6 +81,7 @@
 		F9AF1620254A8C5B006DD54D /* UIImage+AwesomeMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+AwesomeMenu.m"; sourceTree = "<group>"; };
 		F9AF1621254A8C5B006DD54D /* UIImage+AwesomeMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+AwesomeMenu.h"; sourceTree = "<group>"; };
 		F9AF1625254A8F58006DD54D /* AwesomeMenu.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AwesomeMenu.bundle; sourceTree = "<group>"; };
+		F9AF16AC254AD066006DD54D /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 		5C3FF3541486564E0098EE93 = {
 			isa = PBXGroup;
 			children = (
+				F9AF16AC254AD066006DD54D /* README.md */,
 				F9AF1514254A55A5006DD54D /* AwesomeMenu.podspec */,
 				DCDD5EA616E5B2A1005D7B61 /* Default-568h@2x.png */,
 				5C3FF3691486564E0098EE93 /* AwesomeMenu */,
@@ -269,6 +272,7 @@
 			files = (
 				5C3FF36E1486564E0098EE93 /* InfoPlist.strings in Resources */,
 				F9AF1515254A55A5006DD54D /* AwesomeMenu.podspec in Resources */,
+				F9AF16AD254AD066006DD54D /* README.md in Resources */,
 				F9AF1626254A8F58006DD54D /* AwesomeMenu.bundle in Resources */,
 				DCDD5EA716E5B2A1005D7B61 /* Default-568h@2x.png in Resources */,
 			);
