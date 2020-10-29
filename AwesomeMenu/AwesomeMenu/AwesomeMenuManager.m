@@ -46,7 +46,7 @@
     if (size.width > size.height) {
         defaultPosition = AwesomeMenuFullScreenStartingPosition;
     }
-    [self installWithStartingPosition:defaultPosition];
+    [self installWithStartingPosition:defaultPosition delegate:nil];
 }
 
 - (void)installWithStartingPosition:(CGPoint) position delegate:(id<AwesomeMenuDelegate>)delegate
