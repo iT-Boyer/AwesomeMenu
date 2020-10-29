@@ -10,17 +10,23 @@
 #import "UIView+AwesomeMenu.h"
 #import "UIImage+AwesomeMenu.h"
 
+#import "AwesomeMenuManager.h"
+#import "AwesomeMenu.h"
+
 @interface AwesomeMenuWindow()
 @property (nonatomic, strong) UIButton *entryBtn;
 @property (nonatomic, assign) CGFloat kEntryViewSize;
 @property (nonatomic) CGPoint startingPosition;
+
+
+@property (strong, nonatomic) AwesomeMenu *menu;
 @end
 
 @implementation AwesomeMenuWindow
 
 -(instancetype)initWithStartPoint:(CGPoint)startingPosition{
    self.startingPosition = startingPosition;
-   _kEntryViewSize = 58;
+   _kEntryViewSize = 100;
    CGFloat x = self.startingPosition.x;
    CGFloat y = self.startingPosition.y;
    CGPoint defaultPosition = AwesomeMenuStartingPosition;
@@ -32,7 +38,8 @@
        y = defaultPosition.y;
    }
    
-   self = [super initWithFrame:CGRectMake(x, y, _kEntryViewSize, _kEntryViewSize)];
+//   self = [super initWithFrame:CGRectMake(x, y, _kEntryViewSize, _kEntryViewSize)];
+   self = [super initWithFrame:[UIScreen mainScreen].bounds];
    if (self) {
        #if defined(__IPHONE_13_0) && (__IPHONE_OS_VERSION_MAX_ALLOWED >= __IPHONE_13_0)
            if (@available(iOS 13.0, *)) {
@@ -57,7 +64,7 @@
            }
        }
        
-       [self.rootViewController.view addSubview:self.entryBtn];
+       [self.rootViewController.view addSubview:self.menu];
        UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(pan:)];
        [self addGestureRecognizer:pan];
    }
@@ -93,6 +100,7 @@
 }
 
 - (void)pan:(UIPanGestureRecognizer *)pan{
+    return;
     if (self.autoDock) {
         [self autoDocking:pan];
     }else{
@@ -187,5 +195,54 @@
 
     return _entryBtn;
 }
+
+-(AwesomeMenu *)menu
+{
+    if (!_menu) {
+        UIImage *storyMenuItemImage = [UIImage imageNamed:@"AwesomeMenu.bundle/bg-menuitem.png"];
+        UIImage *storyMenuItemImagePressed = [UIImage imageNamed:@"AwesomeMenu.bundle/bg-menuitem-highlighted.png"];
+        UIImage *starImage = [UIImage imageNamed:@"AwesomeMenu.bundle/icon-star.png"];
+        
+        AwesomeMenuItem *starMenuItem1 = [[AwesomeMenuItem alloc] initWithImage:storyMenuItemImage
+                                                              highlightedImage:storyMenuItemImagePressed
+                                                                  ContentImage:starImage
+                                                       highlightedContentImage:nil];
+       AwesomeMenuItem *starMenuItem2 = [[AwesomeMenuItem alloc] initWithImage:storyMenuItemImage
+                                                              highlightedImage:storyMenuItemImagePressed
+                                                                  ContentImage:starImage
+                                                       highlightedContentImage:nil];
+       AwesomeMenuItem *starMenuItem3 = [[AwesomeMenuItem alloc] initWithImage:storyMenuItemImage
+                                                              highlightedImage:storyMenuItemImagePressed
+                                                                  ContentImage:starImage
+                                                       highlightedContentImage:nil];
+       AwesomeMenuItem *starMenuItem4 = [[AwesomeMenuItem alloc] initWithImage:storyMenuItemImage
+                                                              highlightedImage:storyMenuItemImagePressed
+                                                                  ContentImage:starImage
+                                                       highlightedContentImage:nil];
+       AwesomeMenuItem *starMenuItem5 = [[AwesomeMenuItem alloc] initWithImage:storyMenuItemImage
+                                                              highlightedImage:storyMenuItemImagePressed
+                                                                  ContentImage:starImage
+                                                       highlightedContentImage:nil];
+        
+        NSArray *menus = [NSArray arrayWithObjects:starMenuItem1, starMenuItem2, starMenuItem3, starMenuItem4, starMenuItem5, nil];
+       
+       AwesomeMenuItem *startItem = [[AwesomeMenuItem alloc] initWithImage:[UIImage imageNamed:@"AwesomeMenu.bundle/bg-addbutton.png"]
+                                                          highlightedImage:[UIImage imageNamed:@"AwesomeMenu.bundle/bg-addbutton-highlighted.png"]
+                                                              ContentImage:[UIImage imageNamed:@"AwesomeMenu.bundle/icon-plus.png"]
+                                                   highlightedContentImage:[UIImage imageNamed:@"AwesomeMenu.bundle/icon-plus-highlighted.png"]];
+       
+       _menu = [[AwesomeMenu alloc] initWithFrame:self.bounds startItem:startItem optionMenus:menus];
+       _menu.delegate = [AwesomeMenuManager shareInstance].delegate;
+       
+       _menu.menuWholeAngle = M_PI_2;
+        _menu.farRadius = 110.0f;
+        _menu.endRadius = 100.0f;
+        _menu.nearRadius = 90.0f;
+        _menu.animationDuration = 0.3f;
+        _menu.startPoint = self.startingPosition;
+    }
+    return _menu;
+}
+
 
 @end

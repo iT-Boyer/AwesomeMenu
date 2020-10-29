@@ -30,10 +30,10 @@
     //----------------------------------------------------------------------------------------
 
     [[AwesomeMenuManager shareInstance] install];
-    UIImage *storyMenuItemImage = [UIImage imageNamed:@"bg-menuitem.png"];
-    UIImage *storyMenuItemImagePressed = [UIImage imageNamed:@"bg-menuitem-highlighted.png"];
+    UIImage *storyMenuItemImage = [UIImage imageNamed:@"AwesomeMenu.bundle/bg-menuitem.png"];
+    UIImage *storyMenuItemImagePressed = [UIImage imageNamed:@"AwesomeMenu.bundle/bg-menuitem-highlighted.png"];
     
-    UIImage *starImage = [UIImage imageNamed:@"icon-star.png"];
+    UIImage *starImage = [UIImage imageNamed:@"AwesomeMenu.bundle/icon-star.png"];
     
     /*
     // Default Menu
@@ -112,10 +112,10 @@
      
      NSArray *menus = [NSArray arrayWithObjects:starMenuItem1, starMenuItem2, starMenuItem3, starMenuItem4, starMenuItem5, nil];
     
-    AwesomeMenuItem *startItem = [[AwesomeMenuItem alloc] initWithImage:[UIImage imageNamed:@"bg-addbutton.png"]
-                                                       highlightedImage:[UIImage imageNamed:@"bg-addbutton-highlighted.png"]
-                                                           ContentImage:[UIImage imageNamed:@"icon-plus.png"]
-                                                highlightedContentImage:[UIImage imageNamed:@"icon-plus-highlighted.png"]];
+    AwesomeMenuItem *startItem = [[AwesomeMenuItem alloc] initWithImage:[UIImage imageNamed:@"AwesomeMenu.bundle/bg-addbutton.png"]
+                                                       highlightedImage:[UIImage imageNamed:@"AwesomeMenu.bundle/bg-addbutton-highlighted.png"]
+                                                           ContentImage:[UIImage imageNamed:@"AwesomeMenu.bundle/icon-plus.png"]
+                                                highlightedContentImage:[UIImage imageNamed:@"AwesomeMenu.bundle/icon-plus-highlighted.png"]];
     
     AwesomeMenu *menu = [[AwesomeMenu alloc] initWithFrame:self.window.bounds startItem:startItem optionMenus:menus];    
     menu.delegate = self;

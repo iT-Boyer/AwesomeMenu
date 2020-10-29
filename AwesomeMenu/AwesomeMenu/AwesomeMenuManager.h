@@ -9,9 +9,13 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+@protocol AwesomeMenuDelegate;
+
 @interface AwesomeMenuManager : NSObject
 
 + (nonnull AwesomeMenuManager *)shareInstance;
+
+@property (nonatomic, weak) id<AwesomeMenuDelegate> delegate;
 
 @property (nonatomic, assign) BOOL autoDock; //dokit entry icon support autoDock，deffault yes
 
