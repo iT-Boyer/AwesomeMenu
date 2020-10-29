@@ -325,11 +325,12 @@
 		5C3FF3781486564E0098EE93 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AwesomeMenu/AwesomeMenu-Prefix.pch";
 				INFOPLIST_FILE = "AwesomeMenu/AwesomeMenu-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				RUN_CLANG_STATIC_ANALYZER = YES;
 				WARNING_CFLAGS = "-Wall";
@@ -340,11 +341,12 @@
 		5C3FF3791486564E0098EE93 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_ENABLE_OBJC_ARC = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AwesomeMenu/AwesomeMenu-Prefix.pch";
 				INFOPLIST_FILE = "AwesomeMenu/AwesomeMenu-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				RUN_CLANG_STATIC_ANALYZER = YES;
 				WARNING_CFLAGS = "-Wall";
