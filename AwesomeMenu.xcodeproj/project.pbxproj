@@ -45,6 +45,9 @@
 		F9AF1614254A7D3D006DD54D /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9AF1613254A7D3D006DD54D /* CoreLocation.framework */; };
 		F9AF1616254A7D4F006DD54D /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9AF1615254A7D4F006DD54D /* EventKit.framework */; };
 		F9AF1619254A7D61006DD54D /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9AF1618254A7D61006DD54D /* Photos.framework */; };
+		F9AF161D254A86E1006DD54D /* AwesomeMenuManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F9AF161C254A86E1006DD54D /* AwesomeMenuManager.m */; };
+		F9AF1622254A8C5B006DD54D /* UIImage+AwesomeMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = F9AF1620254A8C5B006DD54D /* UIImage+AwesomeMenu.m */; };
+		F9AF1626254A8F58006DD54D /* AwesomeMenu.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F9AF1625254A8F58006DD54D /* AwesomeMenu.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -100,6 +103,11 @@
 		F9AF1613254A7D3D006DD54D /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		F9AF1615254A7D4F006DD54D /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
 		F9AF1618254A7D61006DD54D /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
+		F9AF161B254A86E1006DD54D /* AwesomeMenuManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AwesomeMenuManager.h; sourceTree = "<group>"; };
+		F9AF161C254A86E1006DD54D /* AwesomeMenuManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AwesomeMenuManager.m; sourceTree = "<group>"; };
+		F9AF1620254A8C5B006DD54D /* UIImage+AwesomeMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+AwesomeMenu.m"; sourceTree = "<group>"; };
+		F9AF1621254A8C5B006DD54D /* UIImage+AwesomeMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+AwesomeMenu.h"; sourceTree = "<group>"; };
+		F9AF1625254A8F58006DD54D /* AwesomeMenu.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AwesomeMenu.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -207,19 +215,16 @@
 			isa = PBXGroup;
 			children = (
 				F9AF1605254A7899006DD54D /* AwesomeMenuDefine.h */,
+				F9AF161B254A86E1006DD54D /* AwesomeMenuManager.h */,
+				F9AF161C254A86E1006DD54D /* AwesomeMenuManager.m */,
+				F9AF162A254A909C006DD54D /* Utils */,
 				F9AF15FE254A7799006DD54D /* Category */,
+				F9AF1629254A9030006DD54D /* Window */,
 				5C5949C6153ACC510023B034 /* AwesomeMenu.h */,
 				5C5949C7153ACC510023B034 /* AwesomeMenu.m */,
 				5C5949C8153ACC510023B034 /* AwesomeMenuItem.h */,
 				5C5949C9153ACC510023B034 /* AwesomeMenuItem.m */,
-				F9AF15E9254A729C006DD54D /* AwesomeMenuWindow.h */,
-				F9AF15EA254A729C006DD54D /* AwesomeMenuWindow.m */,
-				F9AF15FA254A7700006DD54D /* AwesomeMenuHomeWindow.h */,
-				F9AF15F9254A7700006DD54D /* AwesomeMenuHomeWindow.m */,
-				F9AF15ED254A7535006DD54D /* AwesomeMenuAppInfoUtil.h */,
-				F9AF15EE254A7535006DD54D /* AwesomeMenuAppInfoUtil.m */,
-				F9AF15F1254A75D8006DD54D /* AwesomeMenuUtil.h */,
-				F9AF15F2254A75D8006DD54D /* AwesomeMenuUtil.m */,
+				F9AF1625254A8F58006DD54D /* AwesomeMenu.bundle */,
 			);
 			path = AwesomeMenu;
 			sourceTree = "<group>";
@@ -233,8 +238,32 @@
 				F9AF15FF254A77A3006DD54D /* UIColor+AwesomeMenu.m */,
 				F9AF1608254A7BAB006DD54D /* UIView+AwesomeMenu.h */,
 				F9AF1609254A7BAB006DD54D /* UIView+AwesomeMenu.m */,
+				F9AF1621254A8C5B006DD54D /* UIImage+AwesomeMenu.h */,
+				F9AF1620254A8C5B006DD54D /* UIImage+AwesomeMenu.m */,
 			);
 			path = Category;
+			sourceTree = "<group>";
+		};
+		F9AF1629254A9030006DD54D /* Window */ = {
+			isa = PBXGroup;
+			children = (
+				F9AF15E9254A729C006DD54D /* AwesomeMenuWindow.h */,
+				F9AF15EA254A729C006DD54D /* AwesomeMenuWindow.m */,
+				F9AF15FA254A7700006DD54D /* AwesomeMenuHomeWindow.h */,
+				F9AF15F9254A7700006DD54D /* AwesomeMenuHomeWindow.m */,
+			);
+			path = Window;
+			sourceTree = "<group>";
+		};
+		F9AF162A254A909C006DD54D /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				F9AF15ED254A7535006DD54D /* AwesomeMenuAppInfoUtil.h */,
+				F9AF15EE254A7535006DD54D /* AwesomeMenuAppInfoUtil.m */,
+				F9AF15F1254A75D8006DD54D /* AwesomeMenuUtil.h */,
+				F9AF15F2254A75D8006DD54D /* AwesomeMenuUtil.m */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -304,6 +333,7 @@
 				5C0364A91488A5D4000CE00F /* icon-star.png in Resources */,
 				5C0364AA1488A5D4000CE00F /* icon-star@2x.png in Resources */,
 				F9AF1515254A55A5006DD54D /* AwesomeMenu.podspec in Resources */,
+				F9AF1626254A8F58006DD54D /* AwesomeMenu.bundle in Resources */,
 				DCDD5EA716E5B2A1005D7B61 /* Default-568h@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -315,11 +345,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9AF161D254A86E1006DD54D /* AwesomeMenuManager.m in Sources */,
 				F9AF15F3254A75D8006DD54D /* AwesomeMenuUtil.m in Sources */,
 				F9AF160A254A7BAB006DD54D /* UIView+AwesomeMenu.m in Sources */,
 				F9AF15EF254A7535006DD54D /* AwesomeMenuAppInfoUtil.m in Sources */,
 				F9AF1601254A77A3006DD54D /* UIColor+AwesomeMenu.m in Sources */,
 				F9AF15FB254A7700006DD54D /* AwesomeMenuHomeWindow.m in Sources */,
+				F9AF1622254A8C5B006DD54D /* UIImage+AwesomeMenu.m in Sources */,
 				5C3FF3701486564E0098EE93 /* main.m in Sources */,
 				5C3FF3741486564E0098EE93 /* AppDelegate.m in Sources */,
 				5C5949CA153ACC510023B034 /* AwesomeMenu.m in Sources */,

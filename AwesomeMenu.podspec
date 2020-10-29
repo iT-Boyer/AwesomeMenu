@@ -9,5 +9,6 @@ Pod::Spec.new do |spec|
   spec.source       = { :git => 'https://github.com/iT-Boyer/AwesomeMenu.git', :tag => '2.0.1'}
   spec.frameworks = 'CoreGraphics','QuartzCore'
   spec.source_files = 'AwesomeMenu/AwesomeMenu/*.{h,m}'
+  spec.resources = 'AwesomeMenu/AwesomeMenu/**/*.bundle'
   spec.requires_arc = true
 end

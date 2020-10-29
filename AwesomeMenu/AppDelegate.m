@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import "AwesomeMenuManager.h"
 @implementation AppDelegate
 
 @synthesize window = _window;
@@ -29,7 +29,7 @@
     //解决该问题的代码 https://www.jianshu.com/p/ff82d632824a
     //----------------------------------------------------------------------------------------
 
-    
+    [[AwesomeMenuManager shareInstance] install];
     UIImage *storyMenuItemImage = [UIImage imageNamed:@"bg-menuitem.png"];
     UIImage *storyMenuItemImagePressed = [UIImage imageNamed:@"bg-menuitem-highlighted.png"];
     
