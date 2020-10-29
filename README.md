@@ -13,7 +13,7 @@ AwesomeMenu is a menu with the same look as the story menu of [Path](https://pat
 ### 安装
 2.0.0及之前旧版本spec存在问题，修复之后，仅支持私库安装
 ```ruby
-pod 'AwesomeMenu', :git => "https://github.com/levey/AwesomeMenu.git", :tag => '3.1.0'
+pod 'AwesomeMenu', :git => "https://github.com/levey/AwesomeMenu.git", :tag => '3.1.1'
 ```
 ### 调用
 
