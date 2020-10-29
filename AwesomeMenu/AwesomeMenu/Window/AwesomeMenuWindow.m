@@ -181,22 +181,41 @@
 - (void)awesomeMenuWillAnimateOpen:(AwesomeMenu *)menu
 {
     [self show:YES];
+    id delegate = [AwesomeMenuManager shareInstance].delegate;
+    if(delegate && [delegate respondsToSelector:@selector(awesomeMenuWillAnimateOpen:)]){
+        [delegate awesomeMenuWillAnimateOpen:menu];
+    }
 }
 -(void)awesomeMenuWillAnimateClose:(AwesomeMenu *)menu
 {
-    
+    id delegate = [AwesomeMenuManager shareInstance].delegate;
+    if(delegate && [delegate respondsToSelector:@selector(awesomeMenuWillAnimateClose:)]){
+        [delegate awesomeMenuWillAnimateClose:menu];
+    }
 }
 - (void)awesomeMenu:(AwesomeMenu *)menu didSelectIndex:(NSInteger)idx
 {
     NSLog(@"Select the index : %ld",(long)idx);
+    [self show:NO];
+    id delegate = [AwesomeMenuManager shareInstance].delegate;
+    if(delegate && [delegate respondsToSelector:@selector(awesomeMenu:didSelectIndex:)]){
+        [delegate awesomeMenu:menu didSelectIndex:idx];
+    }
 }
 - (void)awesomeMenuDidFinishAnimationClose:(AwesomeMenu *)menu {
     NSLog(@"Menu was closed!");
     [self show:NO];
+    id delegate = [AwesomeMenuManager shareInstance].delegate;
+    if(delegate && [delegate respondsToSelector:@selector(awesomeMenuDidFinishAnimationClose:)]){
+        [delegate awesomeMenuDidFinishAnimationClose:menu];
+    }
 }
 - (void)awesomeMenuDidFinishAnimationOpen:(AwesomeMenu *)menu {
     NSLog(@"Menu is open!");
-    
+    id delegate = [AwesomeMenuManager shareInstance].delegate;
+    if(delegate && [delegate respondsToSelector:@selector(awesomeMenuDidFinishAnimationOpen:)]){
+        [delegate awesomeMenuDidFinishAnimationOpen:menu];
+    }
 }
 
 -(void)show:(BOOL)open

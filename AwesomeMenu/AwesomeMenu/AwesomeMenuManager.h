@@ -25,7 +25,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)installWithPid:(NSString *)pId;
 
 // 定制起始位置 | 适用正好挡住关键位置
-- (void)installWithStartingPosition:(CGPoint) position;
+- (void)installWithStartingPosition:(CGPoint) position delegate:(id<AwesomeMenuDelegate>)delegate;
 
 - (void)installWithCustomBlock:(void(^)(void))customBlock;
 

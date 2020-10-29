@@ -49,8 +49,10 @@
     [self installWithStartingPosition:defaultPosition];
 }
 
-- (void)installWithStartingPosition:(CGPoint) position{
+- (void)installWithStartingPosition:(CGPoint) position delegate:(id<AwesomeMenuDelegate>)delegate
+{
     _startingPosition = position;
+    self.delegate = delegate;
     [self installWithCustomBlock:^{
         //什么也没发生
     }];
