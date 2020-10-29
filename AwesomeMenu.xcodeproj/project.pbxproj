@@ -32,6 +32,19 @@
 		5C93DC61148673F2003029CA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C93DC60148673F2003029CA /* QuartzCore.framework */; };
 		DCDD5EA716E5B2A1005D7B61 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = DCDD5EA616E5B2A1005D7B61 /* Default-568h@2x.png */; };
 		F9AF1515254A55A5006DD54D /* AwesomeMenu.podspec in Resources */ = {isa = PBXBuildFile; fileRef = F9AF1514254A55A5006DD54D /* AwesomeMenu.podspec */; };
+		F9AF15EB254A729C006DD54D /* AwesomeMenuWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = F9AF15EA254A729C006DD54D /* AwesomeMenuWindow.m */; };
+		F9AF15EF254A7535006DD54D /* AwesomeMenuAppInfoUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = F9AF15EE254A7535006DD54D /* AwesomeMenuAppInfoUtil.m */; };
+		F9AF15F3254A75D8006DD54D /* AwesomeMenuUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = F9AF15F2254A75D8006DD54D /* AwesomeMenuUtil.m */; };
+		F9AF15F7254A7659006DD54D /* UIViewController+AwesomeMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = F9AF15F6254A7659006DD54D /* UIViewController+AwesomeMenu.m */; };
+		F9AF15FB254A7700006DD54D /* AwesomeMenuHomeWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = F9AF15F9254A7700006DD54D /* AwesomeMenuHomeWindow.m */; };
+		F9AF1601254A77A3006DD54D /* UIColor+AwesomeMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = F9AF15FF254A77A3006DD54D /* UIColor+AwesomeMenu.m */; };
+		F9AF160A254A7BAB006DD54D /* UIView+AwesomeMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = F9AF1609254A7BAB006DD54D /* UIView+AwesomeMenu.m */; };
+		F9AF160E254A7D18006DD54D /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9AF160D254A7D17006DD54D /* AddressBook.framework */; };
+		F9AF1610254A7D25006DD54D /* Contacts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9AF160F254A7D25006DD54D /* Contacts.framework */; };
+		F9AF1612254A7D33006DD54D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9AF1611254A7D33006DD54D /* AVFoundation.framework */; };
+		F9AF1614254A7D3D006DD54D /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9AF1613254A7D3D006DD54D /* CoreLocation.framework */; };
+		F9AF1616254A7D4F006DD54D /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9AF1615254A7D4F006DD54D /* EventKit.framework */; };
+		F9AF1619254A7D61006DD54D /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9AF1618254A7D61006DD54D /* Photos.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +79,27 @@
 		5C93DC60148673F2003029CA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		DCDD5EA616E5B2A1005D7B61 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		F9AF1514254A55A5006DD54D /* AwesomeMenu.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; fileEncoding = 4; path = AwesomeMenu.podspec; sourceTree = "<group>"; };
+		F9AF15E9254A729C006DD54D /* AwesomeMenuWindow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AwesomeMenuWindow.h; sourceTree = "<group>"; };
+		F9AF15EA254A729C006DD54D /* AwesomeMenuWindow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AwesomeMenuWindow.m; sourceTree = "<group>"; };
+		F9AF15ED254A7535006DD54D /* AwesomeMenuAppInfoUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AwesomeMenuAppInfoUtil.h; sourceTree = "<group>"; };
+		F9AF15EE254A7535006DD54D /* AwesomeMenuAppInfoUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AwesomeMenuAppInfoUtil.m; sourceTree = "<group>"; };
+		F9AF15F1254A75D8006DD54D /* AwesomeMenuUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AwesomeMenuUtil.h; sourceTree = "<group>"; };
+		F9AF15F2254A75D8006DD54D /* AwesomeMenuUtil.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AwesomeMenuUtil.m; sourceTree = "<group>"; };
+		F9AF15F5254A7659006DD54D /* UIViewController+AwesomeMenu.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+AwesomeMenu.h"; sourceTree = "<group>"; };
+		F9AF15F6254A7659006DD54D /* UIViewController+AwesomeMenu.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+AwesomeMenu.m"; sourceTree = "<group>"; };
+		F9AF15F9254A7700006DD54D /* AwesomeMenuHomeWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AwesomeMenuHomeWindow.m; sourceTree = "<group>"; };
+		F9AF15FA254A7700006DD54D /* AwesomeMenuHomeWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AwesomeMenuHomeWindow.h; sourceTree = "<group>"; };
+		F9AF15FF254A77A3006DD54D /* UIColor+AwesomeMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+AwesomeMenu.m"; sourceTree = "<group>"; };
+		F9AF1600254A77A3006DD54D /* UIColor+AwesomeMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+AwesomeMenu.h"; sourceTree = "<group>"; };
+		F9AF1605254A7899006DD54D /* AwesomeMenuDefine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AwesomeMenuDefine.h; sourceTree = "<group>"; };
+		F9AF1608254A7BAB006DD54D /* UIView+AwesomeMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+AwesomeMenu.h"; sourceTree = "<group>"; };
+		F9AF1609254A7BAB006DD54D /* UIView+AwesomeMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AwesomeMenu.m"; sourceTree = "<group>"; };
+		F9AF160D254A7D17006DD54D /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		F9AF160F254A7D25006DD54D /* Contacts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Contacts.framework; path = System/Library/Frameworks/Contacts.framework; sourceTree = SDKROOT; };
+		F9AF1611254A7D33006DD54D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		F9AF1613254A7D3D006DD54D /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		F9AF1615254A7D4F006DD54D /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
+		F9AF1618254A7D61006DD54D /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,10 +107,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9AF160E254A7D18006DD54D /* AddressBook.framework in Frameworks */,
+				F9AF1619254A7D61006DD54D /* Photos.framework in Frameworks */,
+				F9AF1616254A7D4F006DD54D /* EventKit.framework in Frameworks */,
 				5C93DC61148673F2003029CA /* QuartzCore.framework in Frameworks */,
 				5C3FF3641486564E0098EE93 /* UIKit.framework in Frameworks */,
 				5C3FF3661486564E0098EE93 /* Foundation.framework in Frameworks */,
+				F9AF1614254A7D3D006DD54D /* CoreLocation.framework in Frameworks */,
 				5C3FF3681486564E0098EE93 /* CoreGraphics.framework in Frameworks */,
+				F9AF1612254A7D33006DD54D /* AVFoundation.framework in Frameworks */,
+				F9AF1610254A7D25006DD54D /* Contacts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -126,6 +166,12 @@
 		5C3FF3621486564E0098EE93 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F9AF1618254A7D61006DD54D /* Photos.framework */,
+				F9AF1615254A7D4F006DD54D /* EventKit.framework */,
+				F9AF1613254A7D3D006DD54D /* CoreLocation.framework */,
+				F9AF1611254A7D33006DD54D /* AVFoundation.framework */,
+				F9AF160F254A7D25006DD54D /* Contacts.framework */,
+				F9AF160D254A7D17006DD54D /* AddressBook.framework */,
 				5C93DC60148673F2003029CA /* QuartzCore.framework */,
 				5C3FF3631486564E0098EE93 /* UIKit.framework */,
 				5C3FF3651486564E0098EE93 /* Foundation.framework */,
@@ -160,12 +206,35 @@
 		5C5949C5153ACC510023B034 /* AwesomeMenu */ = {
 			isa = PBXGroup;
 			children = (
+				F9AF1605254A7899006DD54D /* AwesomeMenuDefine.h */,
+				F9AF15FE254A7799006DD54D /* Category */,
 				5C5949C6153ACC510023B034 /* AwesomeMenu.h */,
 				5C5949C7153ACC510023B034 /* AwesomeMenu.m */,
 				5C5949C8153ACC510023B034 /* AwesomeMenuItem.h */,
 				5C5949C9153ACC510023B034 /* AwesomeMenuItem.m */,
+				F9AF15E9254A729C006DD54D /* AwesomeMenuWindow.h */,
+				F9AF15EA254A729C006DD54D /* AwesomeMenuWindow.m */,
+				F9AF15FA254A7700006DD54D /* AwesomeMenuHomeWindow.h */,
+				F9AF15F9254A7700006DD54D /* AwesomeMenuHomeWindow.m */,
+				F9AF15ED254A7535006DD54D /* AwesomeMenuAppInfoUtil.h */,
+				F9AF15EE254A7535006DD54D /* AwesomeMenuAppInfoUtil.m */,
+				F9AF15F1254A75D8006DD54D /* AwesomeMenuUtil.h */,
+				F9AF15F2254A75D8006DD54D /* AwesomeMenuUtil.m */,
 			);
 			path = AwesomeMenu;
+			sourceTree = "<group>";
+		};
+		F9AF15FE254A7799006DD54D /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				F9AF15F5254A7659006DD54D /* UIViewController+AwesomeMenu.h */,
+				F9AF15F6254A7659006DD54D /* UIViewController+AwesomeMenu.m */,
+				F9AF1600254A77A3006DD54D /* UIColor+AwesomeMenu.h */,
+				F9AF15FF254A77A3006DD54D /* UIColor+AwesomeMenu.m */,
+				F9AF1608254A7BAB006DD54D /* UIView+AwesomeMenu.h */,
+				F9AF1609254A7BAB006DD54D /* UIView+AwesomeMenu.m */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -246,10 +315,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9AF15F3254A75D8006DD54D /* AwesomeMenuUtil.m in Sources */,
+				F9AF160A254A7BAB006DD54D /* UIView+AwesomeMenu.m in Sources */,
+				F9AF15EF254A7535006DD54D /* AwesomeMenuAppInfoUtil.m in Sources */,
+				F9AF1601254A77A3006DD54D /* UIColor+AwesomeMenu.m in Sources */,
+				F9AF15FB254A7700006DD54D /* AwesomeMenuHomeWindow.m in Sources */,
 				5C3FF3701486564E0098EE93 /* main.m in Sources */,
 				5C3FF3741486564E0098EE93 /* AppDelegate.m in Sources */,
 				5C5949CA153ACC510023B034 /* AwesomeMenu.m in Sources */,
 				5C5949CB153ACC510023B034 /* AwesomeMenuItem.m in Sources */,
+				F9AF15EB254A729C006DD54D /* AwesomeMenuWindow.m in Sources */,
+				F9AF15F7254A7659006DD54D /* UIViewController+AwesomeMenu.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
