@@ -54,6 +54,9 @@
 		5C5949C9153ACC510023B034 /* AwesomeMenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AwesomeMenuItem.m; sourceTree = "<group>"; };
 		5C93DC60148673F2003029CA /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		DCDD5EA616E5B2A1005D7B61 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		F9787DA3255139DC00B75702 /* AppDelegate+Awesome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppDelegate+Awesome.h"; sourceTree = "<group>"; };
+		F9787DA4255139DC00B75702 /* AppDelegate+Awesome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "AppDelegate+Awesome.m"; sourceTree = "<group>"; };
+		F9787DA925513AA500B75702 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		F9AF1514254A55A5006DD54D /* AwesomeMenu.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; fileEncoding = 4; path = AwesomeMenu.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		F9AF15E9254A729C006DD54D /* AwesomeMenuWindow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AwesomeMenuWindow.h; sourceTree = "<group>"; };
 		F9AF15EA254A729C006DD54D /* AwesomeMenuWindow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AwesomeMenuWindow.m; sourceTree = "<group>"; };
@@ -108,6 +111,7 @@
 		5C3FF3541486564E0098EE93 = {
 			isa = PBXGroup;
 			children = (
+				F9787DA2255139CD00B75702 /* Test */,
 				F9AF16AC254AD066006DD54D /* README.md */,
 				F9AF1514254A55A5006DD54D /* AwesomeMenu.podspec */,
 				DCDD5EA616E5B2A1005D7B61 /* Default-568h@2x.png */,
@@ -180,6 +184,16 @@
 				F9AF1625254A8F58006DD54D /* AwesomeMenu.bundle */,
 			);
 			path = AwesomeMenu;
+			sourceTree = "<group>";
+		};
+		F9787DA2255139CD00B75702 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				F9787DA925513AA500B75702 /* README.md */,
+				F9787DA3255139DC00B75702 /* AppDelegate+Awesome.h */,
+				F9787DA4255139DC00B75702 /* AppDelegate+Awesome.m */,
+			);
+			path = Test;
 			sourceTree = "<group>";
 		};
 		F9AF15FE254A7799006DD54D /* Category */ = {
